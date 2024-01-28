@@ -1,16 +1,47 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap");
-.content__container__center-center-primary-button {
-  display: flex;
-  width: 50px;
-  height: 12px;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-  background: yellow;
+.primary-button {
+  cursor: pointer;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 6px;
   padding: 18px 0;
-  margin-right: 4px;
-  box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.secondary-button {
+  cursor: pointer;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 6px;
+  padding: 15px 0;
+  border: none;
+}
+
+.transparent-button {
+  cursor: pointer;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 10px;
+  border: none;
+}
+
+.third-button {
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background: #346090;
+  width: 60px;
+  height: 48px;
 }
 
 .content {
@@ -91,116 +122,56 @@
   line-height: 10px;
   margin: 0 0 5px 5px;
 }
-.content .content__container__center-center-base-1 {
-  display: flex;
-  width: 50px;
-  height: 12px;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-  background: #346090;
-  padding: 18px 0;
-  margin-right: 4px;
+.content .content__container__center-center-base-1 .primary-button {
   position: relative;
+  height: 48px;
+  width: 50px;
   box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.1);
-}
-.content .content__container__center-center-base-1 p {
+  background: #346090;
   color: #95b9df;
-  text-align: center;
-  font-family: Oswald;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 6px;
+  margin-right: 2px;
 }
 .content .content__container__center-center-base-1 svg {
   position: absolute;
   top: 2px;
   right: 2px;
 }
-.content .content__container__center-center-base-2 {
-  display: flex;
+.content .content__container__center-center-base-2 .primary-button {
+  height: 48px;
   width: 50px;
-  height: 12px;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
+  box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.1);
   background: #346090;
-  padding: 18px 0;
-  margin-right: 4px;
-  box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.1);
-}
-.content .content__container__center-center-base-2 p {
   color: #95b9df;
-  text-align: center;
-  font-family: Oswald;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 6px;
+  margin-right: 2px;
 }
-.content .content__container__center-center-base-3 {
-  display: flex;
-  width: 50px;
-  height: 12px;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-  background: #e7b900;
-  padding: 18px 0;
+.content .content__container__center-center-base-3 .secondary-button {
   position: relative;
+  height: 48px;
+  width: 50px;
   box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.1);
-}
-.content .content__container__center-center-base-3 p {
+  background: #e7b900;
   color: #202b3c;
-  text-align: center;
-  font-family: Oswald;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 .content .content__container__center-center-base-3 svg {
   position: absolute;
   top: 2px;
   right: 2px;
 }
-.content .content__container__center-center-base-4 {
-  display: flex;
-  width: 50px;
-  height: 12px;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-  background: #346090;
-  padding: 18px 0;
-  margin-left: 10px;
+.content .content__container__center-center-base-4 .primary-button {
   position: relative;
+  height: 48px;
+  width: 55px;
   box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.1);
-}
-.content .content__container__center-center-base-4 p {
-  color: var(--color-text-2, #95b9df);
-  text-align: center;
-  font-family: Oswald;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 6px;
+  color: #95b9df;
+  background: #346090;
+  margin-left: 10px;
 }
 .content .content__container__center-center-base-4 svg {
   position: absolute;
   bottom: 2px;
   right: 2px;
 }
-.content .content__container__center-center-base-5 {
-  display: flex;
-  width: 30px;
-  height: 7px;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.content .content__container__center-center-base-5 p {
+.content .content__container__center-center-base-5 .transparent-button {
   color: #7794b2;
   text-align: center;
   font-family: Roboto;
@@ -208,33 +179,27 @@
   font-style: normal;
   font-weight: 400;
   line-height: 10px;
+  background: none;
+  width: 30px;
+  height: 7px;
 }
-.content .content__container__center-center-base-6 {
-  display: flex;
-  width: 50px;
-  height: 12px;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-  background: #346090;
-  padding: 18px 0;
-  margin-right: 10px;
+.content .content__container__center-center-base-6 .primary-button {
+  height: 48px;
+  width: 55px;
   box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.1);
-}
-.content .content__container__center-center-base-6 p {
   color: #95b9df;
-  text-align: center;
-  font-family: Oswald;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 6px;
+  background: #346090;
+  margin-right: 10px;
 }
 .content .content__container__center-center-base-7 {
   width: 60px;
   height: 48px;
   flex-shrink: 0;
   background: #346090;
+  margin-right: 2px;
+  box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.content .content__container__center-center-base-7 .third-button {
   margin-right: 2px;
   box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.1);
 }
@@ -259,12 +224,7 @@
   line-height: 6px;
   margin: 0 0 14px 0;
 }
-.content .content__container__center-center-base-8 {
-  width: 60px;
-  height: 48px;
-  flex-shrink: 0;
-  background: #346090;
-  margin-right: 4px;
+.content .content__container__center-center-base-8 .third-button {
   box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.1);
 }
 .content .content__container__center-center-base-8 p:first-child {

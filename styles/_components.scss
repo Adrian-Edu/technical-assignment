@@ -1,15 +1,46 @@
 @import "colors";
 @import "utilities";
 
-.content__container__center-center-primary-button {
-  display: flex;
-  width: 50px;
-  height: $secondary-font-size;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-  background: yellow;
+.primary-button {
+  cursor: pointer;
+  text-align: center;
+  font-family: $primary-font-family;
+  font-size: $secondary-font-size;
+  font-style: $primary-font;
+  font-weight: $primary-font-weight;
+  line-height: 6px;
   padding: 18px 0;
-  margin-right: 4px;
-  box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, $secondary-opacity);
+  border: none;
+}
+
+.secondary-button {
+  cursor: pointer;
+  text-align: center;
+  font-family: $primary-font-family;
+  font-size: $secondary-font-size;
+  font-style: $primary-font;
+  font-weight: $primary-font-weight;
+  line-height: 6px;
+  padding: 15px 0;
+  border: none;
+}
+
+.transparent-button {
+  cursor: pointer;
+  text-align: center;
+  font-family: $secondary-font-family;
+  font-size: $tertiary-font-size;
+  font-style: $primary-font;
+  font-weight: $primary-font-weight;
+  line-height: $tertiary-font-size;
+  border: none;
+}
+
+.third-button {
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background: $quinary-background;
+  width: 60px;
+  height: 48px;
 }
