@@ -1,41 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap");
+.content__container__center-center-primary-button {
+  display: flex;
+  width: 50px;
+  height: 12px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  background: yellow;
+  padding: 18px 0;
+  margin-right: 4px;
+  box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
 .content {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(18, 42, 69);
-  height: 110vh;
+  background-color: #122a45;
+  height: 100vh;
 }
-
-.content__container {
+.content .content__container {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
   margin-top: 80px;
 }
-
-.content__container__aside--left {
-  background-color: rgb(26, 54, 85);
+.content .content__container__aside--left {
+  background-color: #1a3655;
   margin-right: 10px;
   width: 240px;
   height: 525px;
   flex-shrink: 0;
 }
-
-.content__container__aside--right {
-  background-color: rgb(26, 54, 85);
+.content .content__container__aside--right {
+  background-color: #1a3655;
   margin-left: 10px;
   width: 240px;
   height: 525px;
   flex-shrink: 0;
 }
-
-.content__container__center-top {
+.content .content__container__center-top {
   width: 700px;
   height: 127px;
   flex-shrink: 0;
 }
-
-.content__container__center-center {
+.content .content__container__center-center {
   width: 700px;
   height: 58px;
   flex-shrink: 0;
@@ -44,21 +54,18 @@
   align-items: center;
   margin: 10px 0 2px 0;
 }
-
-.content__container__center-center-team-score {
+.content .content__container__center-center-team-score {
   margin: 6px 5px 5px 5px;
   width: 220px;
   height: 47px;
   flex-shrink: 0;
 }
-
-.content__container__center-center-team-score-first-2 {
+.content .content__container__center-center-team-score-first-2 {
   display: flex;
   justify-content: space-between;
 }
-
-.content__container__center-center-team-score-first-2-teams p {
-  color: var(--color-text-2, #95B9DF);
+.content .content__container__center-center-team-score-first-2-teams p {
+  color: #95b9df;
   font-family: Oswald;
   font-size: 14px;
   font-style: normal;
@@ -66,10 +73,8 @@
   line-height: 9px;
   margin: 6px 0 0 5px;
 }
-
-.content__container__center-center-team-score-first-2-score p {
-  color: var(--color-accent-3, #00D323);
-  text-align: right;
+.content .content__container__center-center-team-score-first-2-score p {
+  color: #00d323;
   font-family: Oswald;
   font-size: 14px;
   font-style: normal;
@@ -77,9 +82,8 @@
   line-height: 9px;
   margin: 6px 0;
 }
-
-.content__container__center-center-team-score-minutes p {
-  color: var(--color-text-5, #68829C);
+.content .content__container__center-center-team-score-minutes p {
+  color: #68829c;
   font-family: Roboto;
   font-size: 10px;
   font-style: normal;
@@ -87,8 +91,7 @@
   line-height: 10px;
   margin: 0 0 5px 5px;
 }
-
-.content__container__center-center-base-1 {
+.content .content__container__center-center-base-1 {
   display: flex;
   width: 50px;
   height: 12px;
@@ -101,9 +104,8 @@
   position: relative;
   box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.1);
 }
-
-.content__container__center-center-base-1 p {
-  color: var(--color-text-2, #95B9DF);
+.content .content__container__center-center-base-1 p {
+  color: #95b9df;
   text-align: center;
   font-family: Oswald;
   font-size: 12px;
@@ -111,14 +113,12 @@
   font-weight: 400;
   line-height: 6px;
 }
-
-.content__container__center-center-base-1 svg {
+.content .content__container__center-center-base-1 svg {
   position: absolute;
   top: 2px;
   right: 2px;
 }
-
-.content__container__center-center-base-2 {
+.content .content__container__center-center-base-2 {
   display: flex;
   width: 50px;
   height: 12px;
@@ -130,9 +130,8 @@
   margin-right: 4px;
   box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.1);
 }
-
-.content__container__center-center-base-2 p {
-  color: var(--color-text-2, #95B9DF);
+.content .content__container__center-center-base-2 p {
+  color: #95b9df;
   text-align: center;
   font-family: Oswald;
   font-size: 12px;
@@ -140,22 +139,20 @@
   font-weight: 400;
   line-height: 6px;
 }
-
-.content__container__center-center-base-3 {
+.content .content__container__center-center-base-3 {
   display: flex;
   width: 50px;
   height: 12px;
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
-  background: var(--color-accent-2, #E7B900);
+  background: #e7b900;
   padding: 18px 0;
   position: relative;
   box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.1);
 }
-
-.content__container__center-center-base-3 p {
-  color: var(--color-default, #202B3C);
+.content .content__container__center-center-base-3 p {
+  color: #202b3c;
   text-align: center;
   font-family: Oswald;
   font-size: 12px;
@@ -163,14 +160,12 @@
   font-weight: 400;
   line-height: normal;
 }
-
-.content__container__center-center-base-3 svg {
+.content .content__container__center-center-base-3 svg {
   position: absolute;
   top: 2px;
   right: 2px;
 }
-
-.content__container__center-center-base-4 {
+.content .content__container__center-center-base-4 {
   display: flex;
   width: 50px;
   height: 12px;
@@ -183,9 +178,8 @@
   position: relative;
   box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.1);
 }
-
-.content__container__center-center-base-4 p {
-  color: var(--color-text-2, #95B9DF);
+.content .content__container__center-center-base-4 p {
+  color: var(--color-text-2, #95b9df);
   text-align: center;
   font-family: Oswald;
   font-size: 12px;
@@ -193,14 +187,12 @@
   font-weight: 400;
   line-height: 6px;
 }
-
-.content__container__center-center-base-4 svg {
+.content .content__container__center-center-base-4 svg {
   position: absolute;
   bottom: 2px;
   right: 2px;
 }
-
-.content__container__center-center-base-5 {
+.content .content__container__center-center-base-5 {
   display: flex;
   width: 30px;
   height: 7px;
@@ -208,9 +200,8 @@
   justify-content: center;
   flex-shrink: 0;
 }
-
-.content__container__center-center-base-5 p {
-  color: var(--color-text-4, #7794B2);
+.content .content__container__center-center-base-5 p {
+  color: #7794b2;
   text-align: center;
   font-family: Roboto;
   font-size: 10px;
@@ -218,8 +209,7 @@
   font-weight: 400;
   line-height: 10px;
 }
-
-.content__container__center-center-base-6 {
+.content .content__container__center-center-base-6 {
   display: flex;
   width: 50px;
   height: 12px;
@@ -231,9 +221,8 @@
   margin-right: 10px;
   box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.1);
 }
-
-.content__container__center-center-base-6 p {
-  color: var(--color-text-2, #95B9DF);
+.content .content__container__center-center-base-6 p {
+  color: #95b9df;
   text-align: center;
   font-family: Oswald;
   font-size: 12px;
@@ -241,8 +230,7 @@
   font-weight: 400;
   line-height: 6px;
 }
-
-.content__container__center-center-base-7 {
+.content .content__container__center-center-base-7 {
   width: 60px;
   height: 48px;
   flex-shrink: 0;
@@ -250,9 +238,8 @@
   margin-right: 2px;
   box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.1);
 }
-
-.content__container__center-center-base-7 p:first-child {
-  color: var(--color-text-2, #95B9DF);
+.content .content__container__center-center-base-7 p:first-child {
+  color: #95b9df;
   text-align: center;
   font-family: Roboto;
   font-size: 10px;
@@ -262,9 +249,8 @@
   margin: 12px 0 5px 0;
   opacity: 0.6;
 }
-
-.content__container__center-center-base-7 p:last-child {
-  color: var(--color-text-2, #95B9DF);
+.content .content__container__center-center-base-7 p:last-child {
+  color: #95b9df;
   text-align: center;
   font-family: Oswald;
   font-size: 12px;
@@ -273,8 +259,7 @@
   line-height: 6px;
   margin: 0 0 14px 0;
 }
-
-.content__container__center-center-base-8 {
+.content .content__container__center-center-base-8 {
   width: 60px;
   height: 48px;
   flex-shrink: 0;
@@ -282,9 +267,8 @@
   margin-right: 4px;
   box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.1);
 }
-
-.content__container__center-center-base-8 p:first-child {
-  color: var(--color-text-2, #95B9DF);
+.content .content__container__center-center-base-8 p:first-child {
+  color: #95b9df;
   text-align: center;
   font-family: Roboto;
   font-size: 10px;
@@ -294,9 +278,8 @@
   margin: 12px 0 5px 0;
   opacity: 0.6;
 }
-
-.content__container__center-center-base-8 p:last-child {
-  color: var(--color-text-2, #95B9DF);
+.content .content__container__center-center-base-8 p:last-child {
+  color: #95b9df;
   text-align: center;
   font-family: Oswald;
   font-size: 12px;
@@ -305,15 +288,13 @@
   line-height: 6px;
   margin: 0 0 14px 0;
 }
-
-.content__container__center-center-base-9 {
+.content .content__container__center-center-base-9 {
   width: 30px;
   height: 58px;
   flex-shrink: 0;
   margin-left: 4px;
 }
-
-.content__container__center-footer {
+.content .content__container__center-footer {
   width: 700px;
   height: 328px;
   left: 1000px;
@@ -321,4 +302,81 @@
   background: #1a3655;
 }
 
-/* probleme marginea la steluta + pozitionarea elementelor -1.5 si 2.14 plus 1.5 si 3.12 *//*# sourceMappingURL=styles.css.map */
+/* INFO ABOUT SCSS
+
+STYLES.SCSS
+
+IMPORTS
+
+@use "sass:math" as math;
+@import "variables";
+@import "colors";
+@import "base";
+@import "./components/components";
+@import "utilities";
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap");
+
+THE STYLES SHOULD CONTAIN: 
+
+1. VARIABLES - 
+2. COLORS - THE COLORS THAT WE USE
+3. BASE - ALL THE CODE EXCEPT: COLORS, VARIABLES, UTILITIES
+4. UTILITIES: FONT-STYLES, FONT-SIZE, FONT-FAMILY, FONT-OPACITY, FONT-WEIGHT, PAGE-HEIGHT
+5. MEDIA QUERIES
+6. ANIMATION OR TRANSITIONS
+7. MIXINS
+
+
+WHAT THE SCSS SHOULD CONTAIN
+1. Base & layout - base
+2. Colors - colors
+3. Components (buttons, card, navbar)
+4. Utilities (margin, padding, opacity)
+
+
+* FONT SIZE
+
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.25;
+$font-size-xl: $base-font-size * 1.5;
+
+* DIVIDE SOMETING 
+
+@use "sass:math" as math; 
+
+ math.div($variable, 4);
+
+ * SEE SOMETHING
+
+ @debug "hello ninjas"
+
+ * CALCULATE SOMETHING
+
+ @debug math.div(5, 2);
+ @bebug math.floor(2.6); - rotunjeste la 2
+ @debug math.max(1px, 20px, 15px, 12px); - cauta cea mai mare valoare
+
+ * MAPS
+
+ $colors: (
+  blue: blue;
+  red: red;
+  green: green;
+  gray: gray;
+ )
+
+ @debug map-get($ , "color")
+ @debug map-has-key($ , "color")
+ @debug map-remove($colors, "primary")
+ @debug map-merge($colors, " ("pink: "#ffc0cb"))
+
+ LOOPS
+
+ @each $key, $val in $colors {
+
+ }
+
+ */
+/* probleme marginea la steluta + pozitionarea elementelor -1.5 si 2.14 plus 1.5 si 3.12 */ /*# sourceMappingURL=styles.css.map */

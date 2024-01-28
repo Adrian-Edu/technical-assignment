@@ -1,4 +1,6 @@
 @import "colors";
+@import "utilities";
+@import "components";
 
 .content {
   display: flex;
@@ -15,7 +17,7 @@
   }
 
   .content__container__aside--left {
-    background-color: $secondary-backgound;
+    background-color: $secondary-background;
     margin-right: $tertiary-font-size;
     width: 240px;
     height: 525px;
@@ -23,7 +25,7 @@
   }
 
   .content__container__aside--right {
-    background-color: $secondary-backgound;
+    background-color: $secondary-background;
     margin-left: $tertiary-font-size;
     width: 240px;
     height: 525px;
@@ -43,7 +45,7 @@
     width: 700px;
     height: 58px;
     flex-shrink: 0;
-    background-color: $secondary-backgound;
+    background-color: $secondary-background;
     display: flex;
     align-items: center;
     margin: $tertiary-font-size 0 2px 0;
@@ -72,7 +74,7 @@
   }
 
   .content__container__center-center-team-score-first-2-score p {
-    color: $quinary-font-color;
+    color: $quaternary-font-color;
     font-family: $primary-font-family;
     font-size: $primary-font-size;
     font-style: $primary-font;
@@ -158,7 +160,7 @@
   }
 
   .content__container__center-center-base-3 p {
-    color: var(--color-default, $quinary-font-color);
+    color: $quinary-font-color;
     text-align: center;
     font-family: $primary-font-family;
     font-size: $secondary-font-size;
@@ -255,7 +257,7 @@
   }
 
   .content__container__center-center-base-7 p:first-child {
-    color: var(--color-text-2, $primary-font-color);
+    color: $primary-font-color;
     text-align: center;
     font-family: $secondary-font-family;
     font-size: $tertiary-font-size;
@@ -267,7 +269,7 @@
   }
 
   .content__container__center-center-base-7 p:last-child {
-    color: var(--color-text-2, $primary-font-color);
+    color: $primary-font-color;
     text-align: center;
     font-family: $primary-font-family;
     font-size: $secondary-font-size;
@@ -287,7 +289,7 @@
   }
 
   .content__container__center-center-base-8 p:first-child {
-    color: var(--color-text-2, $primary-font-color);
+    color: $primary-font-color;
     text-align: center;
     font-family: $secondary-font-family;
     font-size: $tertiary-font-size;
@@ -299,7 +301,7 @@
   }
 
   .content__container__center-center-base-8 p:last-child {
-    color: var(--color-text-2, $primary-font-color);
+    color: $primary-font-color;
     text-align: center;
     font-family: $primary-font-family;
     font-size: $secondary-font-size;
@@ -321,6 +323,6 @@
     height: 328px;
     left: 1000px;
     flex-shrink: 0;
-    background: $secondary-backgound;
+    background: $secondary-background;
   }
 }

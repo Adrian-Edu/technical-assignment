@@ -1,0 +1,15 @@
+@import "colors";
+@import "utilities";
+
+.content__container__center-center-primary-button {
+  display: flex;
+  width: 50px;
+  height: $secondary-font-size;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  background: yellow;
+  padding: 18px 0;
+  margin-right: 4px;
+  box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, $secondary-opacity);
+}

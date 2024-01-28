@@ -1,17 +1,41 @@
-//variables and functions
+@use "sass:math" as math;
+@import "variables";
+@import "base";
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap");
+
+/* INFO ABOUT SCSS
+
+STYLES.SCSS
+
+IMPORTS
+
 @use "sass:math" as math;
 @import "variables";
 @import "colors";
 @import "base";
 @import "./components/components";
 @import "utilities";
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap");
 
-// base & layout - base
-// colors - colors
-// components (buttons, card, navbar)
-// utilities (margin, padding, opacity)
+THE STYLES SHOULD CONTAIN: 
 
-/* SCSS 
+1. VARIABLES - 
+2. COLORS - THE COLORS THAT WE USE
+3. BASE - ALL THE CODE EXCEPT: COLORS, VARIABLES, UTILITIES
+4. UTILITIES: FONT-STYLES, FONT-SIZE, FONT-FAMILY, FONT-OPACITY, FONT-WEIGHT, PAGE-HEIGHT
+5. MEDIA QUERIES
+6. ANIMATION OR TRANSITIONS
+7. MIXINS
+
+
+WHAT THE SCSS SHOULD CONTAIN
+1. Base & layout - base
+2. Colors - colors
+3. Components (buttons, card, navbar)
+4. Utilities (margin, padding, opacity)
+
 
 * FONT SIZE
 
@@ -52,12 +76,12 @@ $font-size-xl: $base-font-size * 1.5;
 
  LOOPS
 
-  
-
  @each $key, $val in $colors {
   
  }
 
  */
 
-@debug math.div(5, 2);
+// @debug math.div(5, 2);
+
+/* probleme marginea la steluta + pozitionarea elementelor -1.5 si 2.14 plus 1.5 si 3.12 */ /*# sourceMappingURL=styles.css.map */
