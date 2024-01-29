@@ -44,53 +44,6 @@
   height: 48px;
 }
 
-/*
-
-$breakpoints: (
-  "xs": 0,
-  "sm": 480px,
-  "md": 720px,
-  "lg": 960px,
-  "xl": 1200px,
-);
-
-@mixin xs {
-  @media (min-width: map-get($breakpoints, "xs")) {
-    @content;
-  }
-}
-
-@mixin sm {
-  @media (min-width: map-get($breakpoints, "sm")) {
-    @content;
-  }
-}
-
-@mixin md {
-  @media (min-width: map-get($breakpoints, "md")) {
-    @content;
-  }
-}
-
-@mixin lg {
-  @media (min-width: map-get($breakpoints, "lg")) {
-    @content;
-  }
-}
-
-@mixin xl {
-  @media (min-width: map-get($breakpoints, "xl")) {
-    @content;
-  }
-}
-
-@mixin breakpoint($bp: 310) {
-  @media (min-width: $bp) {
-    @content;
-  }
-}
-
-*/
 .content {
   display: flex;
   justify-content: center;
@@ -98,29 +51,6 @@ $breakpoints: (
   background-color: #122a45;
   height: 100vh;
   width: 100%;
-}
-@media (max-width: 480px) {
-  .content .content__container__aside--left {
-    display: none;
-  }
-  .content .content__container__aside--right {
-    display: none;
-  }
-  .content .content__container__center-center-base-4 {
-    display: none;
-  }
-  .content .content__container__center-center-base-5 {
-    display: none;
-  }
-  .content .content__container__center-center-base-6 {
-    display: none;
-  }
-  .content .content__container__center-center-base-7 {
-    display: none;
-  }
-  .content .content__container__center-center-base-8 {
-    display: none;
-  }
 }
 .content .content__container {
   display: flex;
@@ -332,128 +262,77 @@ $breakpoints: (
   flex-shrink: 0;
   background: #1a3655;
 }
-
-/*
-
-$breakpoints: (
-  "xs": 0,
-  "sm": 480px,
-  "md": 720px,
-  "lg": 960px,
-  "xl": 1200px,
-);
-
-@mixin xs {
-  @media (min-width: map-get($breakpoints, "xs")) {
-    @content;
-  }
+.content .primary-button:hover {
+  background-color: red;
 }
-
-@mixin sm {
-  @media (min-width: map-get($breakpoints, "sm")) {
-    @content;
-  }
+.content .secondary-button:hover {
+  background-color: rgb(0, 183, 255);
 }
-
-@mixin md {
-  @media (min-width: map-get($breakpoints, "md")) {
-    @content;
-  }
+.content .transparent-button:hover {
+  background-color: pink;
 }
-
-@mixin lg {
-  @media (min-width: map-get($breakpoints, "lg")) {
-    @content;
-  }
+.content .third-button:hover {
+  background-color: rgb(9, 255, 0);
 }
-
-@mixin xl {
-  @media (min-width: map-get($breakpoints, "xl")) {
-    @content;
+@media (max-width: 480px) {
+  .content .content__container__aside--left {
+    display: none;
   }
-}
-
-@mixin breakpoint($bp: 310) {
-  @media (min-width: $bp) {
-    @content;
+  .content .content__container__aside--right {
+    display: none;
   }
-}
-
-*/
-/* INFO ABOUT SCSS
-
-STYLES.SCSS
-
-IMPORTS
-
-@use "sass:math" as math;
-@import "variables";
-@import "colors";
-@import "base";
-@import "./components/components";
-@import "utilities";
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap");
-
-THE STYLES SHOULD CONTAIN: 
-
-1. VARIABLES - 
-2. COLORS - THE COLORS THAT WE USE
-3. BASE - ALL THE CODE EXCEPT: COLORS, VARIABLES, UTILITIES
-4. UTILITIES: FONT-STYLES, FONT-SIZE, FONT-FAMILY, FONT-OPACITY, FONT-WEIGHT, PAGE-HEIGHT
-5. MEDIA QUERIES
-6. ANIMATION OR TRANSITIONS
-7. MIXINS
-
-
-WHAT THE SCSS SHOULD CONTAIN
-1. Base & layout - base
-2. Colors - colors
-3. Components (buttons, card, navbar)
-4. Utilities (margin, padding, opacity)
-
-
-* FONT SIZE
-
-$base-font-size: 1rem;
-$font-size-sm: $base-font-size * 0.75;
-$font-size-lg: $base-font-size * 1.25;
-$font-size-xl: $base-font-size * 1.5;
-
-* DIVIDE SOMETING 
-
-@use "sass:math" as math; 
-
- math.div($variable, 4);
-
- * SEE SOMETHING
-
- @debug "hello ninjas"
-
- * CALCULATE SOMETHING
-
- @debug math.div(5, 2);
- @bebug math.floor(2.6); - rotunjeste la 2
- @debug math.max(1px, 20px, 15px, 12px); - cauta cea mai mare valoare
-
- * MAPS
-
- $colors: (
-  blue: blue;
-  red: red;
-  green: green;
-  gray: gray;
- )
-
- @debug map-get($ , "color")
- @debug map-has-key($ , "color")
- @debug map-remove($colors, "primary")
- @debug map-merge($colors, " ("pink: "#ffc0cb"))
-
- LOOPS
-
- @each $key, $val in $colors {
-
- }
-
- *//*# sourceMappingURL=styles.css.map */
+  .content .content__container__center-center-base-4 {
+    display: none;
+  }
+  .content .content__container__center-center-base-5 {
+    display: none;
+  }
+  .content .content__container__center-center-base-6 {
+    display: none;
+  }
+  .content .content__container__center-center-base-7 {
+    display: none;
+  }
+  .content .content__container__center-center-base-8 {
+    display: none;
+  }
+  .content .content__container {
+    max-width: 400px;
+  }
+  .content .content__container__center-top {
+    width: 304px;
+  }
+  .content .content__container__center-top img {
+    width: 304px;
+    height: 127px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .content .content__container__center-center {
+    width: 304px;
+  }
+  .content .content__container__center-footer {
+    width: 304px;
+  }
+  .content .content__container__center-center-team-score {
+    width: unset;
+  }
+  .content .content__container__center-center-team-score-first-2-teams p {
+    width: 92px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 6px 0 0 0;
+    line-height: 11px;
+  }
+  .content .content__container__center-center-base-9 {
+    margin-left: 5px;
+  }
+  .content .content__container__center-center-team-score-minutes p {
+    width: 105px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+  }
+}/*# sourceMappingURL=styles.css.map */

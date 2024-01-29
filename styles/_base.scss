@@ -4,12 +4,6 @@
 @import "breakpoints";
 
 .content {
-  @include xs;
-  @include sm;
-  @include md;
-  @include lg;
-  @include xl;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -254,4 +248,25 @@
     flex-shrink: 0;
     background: $secondary-background;
   }
+
+  .primary-button:hover {
+    background-color: red;
+  }
+
+  .secondary-button:hover {
+    background-color: rgb(0, 183, 255);
+  }
+
+  .transparent-button:hover {
+    background-color: pink;
+  }
+
+  .third-button:hover {
+    background-color: rgb(9, 255, 0);
+  }
+
+  @include sm;
+  @include md;
+  @include lg;
+  @include xl;
 }
