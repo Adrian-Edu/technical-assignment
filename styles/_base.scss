@@ -1,13 +1,21 @@
 @import "colors";
 @import "utilities";
 @import "components";
+@import "breakpoints";
 
 .content {
+  @include xs;
+  @include sm;
+  @include md;
+  @include lg;
+  @include xl;
+
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: $primary-background;
   height: $page-height;
+  width: 100%;
 
   .content__container {
     display: flex;
@@ -45,7 +53,7 @@
     background-color: $secondary-background;
     display: flex;
     align-items: center;
-    margin: $tertiary-font-size 0 2px 0;
+    margin: 10px 0 2px 0;
   }
 
   .content__container__center-center-team-score {

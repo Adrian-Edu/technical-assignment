@@ -44,12 +44,83 @@
   height: 48px;
 }
 
+/*
+
+$breakpoints: (
+  "xs": 0,
+  "sm": 480px,
+  "md": 720px,
+  "lg": 960px,
+  "xl": 1200px,
+);
+
+@mixin xs {
+  @media (min-width: map-get($breakpoints, "xs")) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: map-get($breakpoints, "sm")) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: map-get($breakpoints, "md")) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: map-get($breakpoints, "xl")) {
+    @content;
+  }
+}
+
+@mixin breakpoint($bp: 310) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}
+
+*/
 .content {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #122a45;
   height: 100vh;
+  width: 100%;
+}
+@media (max-width: 480px) {
+  .content .content__container__aside--left {
+    display: none;
+  }
+  .content .content__container__aside--right {
+    display: none;
+  }
+  .content .content__container__center-center-base-4 {
+    display: none;
+  }
+  .content .content__container__center-center-base-5 {
+    display: none;
+  }
+  .content .content__container__center-center-base-6 {
+    display: none;
+  }
+  .content .content__container__center-center-base-7 {
+    display: none;
+  }
+  .content .content__container__center-center-base-8 {
+    display: none;
+  }
 }
 .content .content__container {
   display: flex;
@@ -262,6 +333,53 @@
   background: #1a3655;
 }
 
+/*
+
+$breakpoints: (
+  "xs": 0,
+  "sm": 480px,
+  "md": 720px,
+  "lg": 960px,
+  "xl": 1200px,
+);
+
+@mixin xs {
+  @media (min-width: map-get($breakpoints, "xs")) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: map-get($breakpoints, "sm")) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: map-get($breakpoints, "md")) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: map-get($breakpoints, "xl")) {
+    @content;
+  }
+}
+
+@mixin breakpoint($bp: 310) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}
+
+*/
 /* INFO ABOUT SCSS
 
 STYLES.SCSS
@@ -338,5 +456,4 @@ $font-size-xl: $base-font-size * 1.5;
 
  }
 
- */
-/* probleme marginea la steluta + pozitionarea elementelor -1.5 si 2.14 plus 1.5 si 3.12 */ /*# sourceMappingURL=styles.css.map */
+ *//*# sourceMappingURL=styles.css.map */
